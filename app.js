@@ -44,48 +44,57 @@ let type = "";
 let color = "";
 let size = "";
 
-switch ("typeID") {
+switch (typeId) {
   case "01": 
-    console.log("Tank Top");  
+    type = "Tank top";  
+    break;
   case "02":
-    console.log("T-Shirt");
+    type = "T-Shirt";
+    break;
   case "03":
-    console.log("Long Sleeve");  
+    type = "Long Sleeve";  
+    break;
   case "04":
-    console.log("Sweat Shirt");  
+    type = "Sweat Shirt";  
     break;
   default:
-    console.log("other"); 
+    type ="other"; 
 }
 
-switch ("colorID") {
+switch (colorId) {
   case "BK": 
-    console.log("black");  
+    color = "black"; 
+    break;
   case "BL":
-    console.log("blue");
+    color = "blue";
+    break;
   case "RD":
-    console.log("red");  
+    color = "red";  
+    break;
   case "PU":
-    console.log("purple");  
+    color = "purple";  
     break;
   default:
-    console.log("white"); 
+    color = "white"; 
 }
 
 
-switch ("sizeID") {
+switch (sizeId) {
   case "S": 
-    console.log("small");  
+    size = "small";  
+    break;
   case "M":
-    console.log("medium");
+    size = "medium";
+    break;
   case "L":
-    console.log("large");  
+    size = "large";  
+    break;
   case "XL":
-    console.log("extra large");  
+    size = "extra large";  
     break;
   default:
-    console.log("one size fits all"); 
+    size = "one size fits all"; 
 }
 
-console.log(`Product: ${"Large"} ${"Purple"}
-${"Tank Top"}`);
+console.log(`Product: ${size} ${color}
+${type}`);
